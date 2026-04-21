@@ -19,7 +19,7 @@ app.use('/uploads', express.static(path.join(__dirname, '..', process.env.UPLOAD
 
 // Routes
 app.use('/api/auth', require('./routes/auth.routes'));
-app.use('/api/posts', require('./routes/post.routes'));
+app.use('/api/post', require('./routes/post.routes'));
 app.use('/api/feed', require('./routes/feed.routes'));
 app.use('/api/applications', require('./routes/application.routes'));
 app.use('/api/offers', require('./routes/offer.routes'));
